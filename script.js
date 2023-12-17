@@ -1,38 +1,3 @@
-
-//
-//
-//
-// LIBRARIES --> PROGRAM 			PROGRAM LEVEL
-// 					|
-// 				 PLATFORM			ADJACENT LOWER LEVEL
-//
-//
-//
-// 	APIS   -->	PROGRAM
-// 	  | 		   |
-// 	{ SET OF PLATFORMS }
-//
-//
-//
-
-
-async function test() {
-
-	let wasm = await ((await fetch("test.wasm")).arrayBuffer());
-
-	const mod = await WebAssembly.instantiate(wasm, {env: {log: function(str) {console.log(str)}}});
-	console.log(mod.instance.exports.add(1,2))
-
-}
-
-test();
-
-
-
-
-
-
-
 const canvas = document.createElement("canvas");
 const ctx = canvas.getContext("2d");
 
