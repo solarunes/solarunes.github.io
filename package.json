@@ -1,0 +1,23 @@
+{
+  "name": "sol-website",
+  "version": "1.0.0",
+  "description": "Solarunes' provisory website.",
+  "main": " ",
+  "scripts": {
+    "test": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solarunes/solarunes.github.io.git"
+  },
+  "author": "solarunes",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/solarunes/solarunes.github.io/issues"
+  },
+  "homepage": "https://github.com/solarunes/solarunes.github.io#readme",
+  "private": "true",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
