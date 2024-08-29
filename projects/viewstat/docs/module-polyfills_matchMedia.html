@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>polyfills/matchMedia - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-media.html">media</a><ul class='methods'><li data-type='method' style='display: none;'><a href="module-media.html#.getRangedMediaExactValue">getRangedMediaExactValue</a></li><li data-type='method' style='display: none;'><a href="module-media.html#.supportsMediaFeature">supportsMediaFeature</a></li><li data-type='method' style='display: none;'><a href="module-media.html#.supportsMediaQueries">supportsMediaQueries</a></li><li data-type='method' style='display: none;'><a href="module-media.html#.supportsRangedMediaUnit">supportsRangedMediaUnit</a></li></ul></li><li></li><li><a href="module-polyfills_matchMedia.html">polyfills/matchMedia</a><ul class='methods'><li data-type='method' style='display: none;'><a href="module-polyfills_matchMedia.html#~matchMedia">matchMedia</a></li></ul></li><li><a href="module-polyfills_requestAnimationFrame.html">polyfills/requestAnimationFrame</a><ul class='methods'><li data-type='method' style='display: none;'><a href="module-polyfills_requestAnimationFrame.html#.animationFrameIsRunning">animationFrameIsRunning</a></li><li data-type='method' style='display: none;'><a href="module-polyfills_requestAnimationFrame.html#.cancelAnimationFrame">cancelAnimationFrame</a></li><li data-type='method' style='display: none;'><a href="module-polyfills_requestAnimationFrame.html#.requestAnimationFrame">requestAnimationFrame</a></li><li data-type='method' style='display: none;'><a href="module-polyfills_requestAnimationFrame.html#.startAnimationFrameRuntime">startAnimationFrameRuntime</a></li><li data-type='method' style='display: none;'><a href="module-polyfills_requestAnimationFrame.html#.stopAnimationFrameRuntime">stopAnimationFrameRuntime</a></li></ul></li><li><a href="module-screen.html">screen</a><ul class='methods'><li data-type='method' style='display: none;'><a href="module-screen.html#.analyzeRefreshRateAccuracy">analyzeRefreshRateAccuracy</a></li><li data-type='method' style='display: none;'><a href="module-screen.html#.analyzeRefreshRateAccuracyCallback">analyzeRefreshRateAccuracyCallback</a></li><li data-type='method' style='display: none;'><a href="module-screen.html#.getRefreshRate">getRefreshRate</a></li><li data-type='method' style='display: none;'><a href="module-screen.html#.getRefreshRateCallback">getRefreshRateCallback</a></li><li data-type='method' style='display: none;'><a href="module-screen.html#~colorBitDepth">colorBitDepth</a></li><li data-type='method' style='display: none;'><a href="module-screen.html#~colorDepth">colorDepth</a></li><li data-type='method' style='display: none;'><a href="module-screen.html#~colorRange">colorRange</a></li><li data-type='method' style='display: none;'><a href="module-screen.html#~colorSpace">colorSpace</a></li><li data-type='method' style='display: none;'><a href="module-screen.html#~isTerminal">isTerminal</a></li></ul></li><li></li><li><a href="module-screen_layoutViewport.html">screen/layoutViewport</a><ul class='methods'><li data-type='method' style='display: none;'><a href="module-screen_layoutViewport.html#~devicePixelRatio">devicePixelRatio</a></li><li data-type='method' style='display: none;'><a href="module-screen_layoutViewport.html#~height">height</a></li><li data-type='method' style='display: none;'><a href="module-screen_layoutViewport.html#~offsetX">offsetX</a></li><li data-type='method' style='display: none;'><a href="module-screen_layoutViewport.html#~offsetY">offsetY</a></li><li data-type='method' style='display: none;'><a href="module-screen_layoutViewport.html#~width">width</a></li></ul></li></ul><h3>Interfaces</h3><ul><li><a href="CompatibilitySpecifier.html">CompatibilitySpecifier</a></li><li><a href="module-polyfills_matchMedia-MediaQueryListPolyfill.html">MediaQueryListPolyfill</a></li></ul><h3>Global</h3><ul><li><a href="global.html#AUTHOR">AUTHOR</a></li><li><a href="global.html#LICENSE">LICENSE</a></li><li><a href="global.html#VERSION">VERSION</a></li><li><a href="global.html#getCompatInfo">getCompatInfo</a></li><li><a href="global.html#screen">screen</a></li><li><a href="global.html#setSilent">setSilent</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">polyfills/matchMedia</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+            
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    		
+	    <h3 class="subsection-title">Interfaces</h3>		
+	
+	    <dl>		
+	        <dt><a href="module-polyfills_matchMedia-MediaQueryListPolyfill.html">MediaQueryListPolyfill</a></dt>		
+	        <dd><p>Polyfill of the &quot;MediaQueryList&quot; object. Does not currently support events.</p></dd>		
+	    </dl>		
+	
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="~matchMedia"><span class="type-signature type-signature-inner">(inner) </span>matchMedia<span class="signature">(rule)</span><span class="type-signature"> &rarr; {MediaQueryListPolyfill}</span></h4>
+
+    
+    <p class="summary usertext"><p>Polyfill for the &quot;matchMedia&quot; built-in. Does not currently support events.</p></p>
+    
+
+
+
+
+<dl class="details">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+    <h5 class="h5-examples">Example</h5>
+    
+    <pre class="prettyprint"><code>const {media, matches} = viewstat.polyfills.matchMedia("(min-height: 500px)");
+console.log( media ) // "(min-height: 500px)"
+console.log( matches ) // true or false</code></pre>
+
+
+
+
+    <h5 class="h5-parameters">Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>rule</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>media query to match</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5 class="h5-returns">Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">MediaQueryListPolyfill</span>
+
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>
